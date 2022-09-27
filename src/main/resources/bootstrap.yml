@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: jxw-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8858
+        namespace: 58e65606-60ec-4c59-bd3a-945073b3847d
+        username: user_dev
+        password: nacos
+      config:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8858
+        namespace: 58e65606-60ec-4c59-bd3a-945073b3847d
+        username: user_dev
+        password: nacos
+        file-extension: yml
+
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8080
